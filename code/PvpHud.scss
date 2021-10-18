@@ -1,0 +1,89 @@
+ClassSelectionForm {
+	background-color: rgba(black, 0.5);
+	border-radius: 3px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	padding: 0 20px;
+	align-items: center;
+	
+	&.MainTextLabel {
+		display: block;
+	}
+}
+
+FormRow {
+	position: absolute;
+	height: 50%;
+	align-content: center;
+	image{
+		height:10%;
+		width: 50%;
+	}
+}
+
+rootPanel {
+	background-color: rgba(#333, 0);
+	transition: background-color 0.2s ease-in;
+
+	&.spawnmenuopen {
+		transition: background-color 0.3s ease-out;
+		background-color: rgba( #333, 0.9);
+	}
+
+	&.devcamera {
+		display: none;
+	}
+}
+
+//Health label to display the amount of health the player has
+HealthLabel {
+	position: absolute;
+	background-color: rgba(black, 0.5);
+	border-radius: 3px;
+	right: 100px;
+	bottom: 48px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	height: 80px;
+	padding: 0 20px;
+	align-items: center;
+	
+	.icon {
+		font-size: 30px;
+		padding-right: 10px;
+	}
+}
+
+//Resource label to display the amount of resources the player has (mana/energy)
+ResourceLabel {
+	position: absolute;
+	background-color: rgba(black, 0.5);
+	border-radius: 3px;
+	right: 280px;
+	bottom: 48px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	height: 80px;
+	padding: 0 20px;
+	align-items: center;
+	
+	.icon {
+		font-size: 30px;
+		padding-right: 10px;
+	}
+}
+
+text.title
+{
+	font-family: Poppins;
+	font-size: 50px;
+	font-weight: 900;
+	color: white;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	text-shadow: 5px 5px 50px rgba( black, 0.8 );
+}
